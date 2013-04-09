@@ -29,12 +29,15 @@ Baisc reference
 ---------------
 
 First start the session via :
+
 HypGA.startSession( "YOUR-UA-CODE" );
 
 Tracking a page view :
+
 HypGA.trackPageView( "your-page-code");
 
 Tracking an event :
+
 HypGA.trackEvent( "event-cat" , "event-action","event-label",1);
 
 For more advance methods just take a look a the HypGA class.
