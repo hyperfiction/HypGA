@@ -46,7 +46,10 @@ All the Google Analytics V2 methods are supported( timing, metric , social , dim
 Made at Hyperfiction
 --------------------
 [hyperfiction.fr](http://hyperfiction.fr)
-Developed by : Johann Martinache [@shoe_box](https://twitter.com/shoe_box)
+
+Developed by : 
+Johann Martinache 
+[@shoe_box](https://twitter.com/shoe_box)
 
 License
 -------
