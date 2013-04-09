@@ -29,17 +29,19 @@ Baisc reference
 ---------------
 
 First start the session via :
-
+<pre><code>
 HypGA.startSession( "YOUR-UA-CODE" );
+/<code></pre>
 
 Tracking a page view :
-
+<pre><code>
 HypGA.trackPageView( "your-page-code");
+/<code></pre>
 
 Tracking an event :
-
+<pre><code>
 HypGA.trackEvent( "event-cat" , "event-action","event-label",1);
-
+/<code></pre>
 For more advance methods just take a look a the HypGA class.
 All the Google Analytics V2 methods are supported( timing, metric , social , dimension... )
 
