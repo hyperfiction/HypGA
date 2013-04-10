@@ -177,12 +177,11 @@ class HypGA{
 		* @param 	i : Delay ( Int )
 		* @return	void
 		*/
-		#if android
 		@JNI
-		#end
 		static public function setDispatch_period( i : Int ) : Void {
 		}
-		end
+
+		#end
 
 	// -------o protected
 
