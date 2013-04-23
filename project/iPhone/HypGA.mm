@@ -4,7 +4,7 @@
 #import "GAI.h"
 #import "GAITracker.h"
 
-namespace hyperfiction {
+namespace hypga {
 
 	static id<GAITracker> tracker;
 

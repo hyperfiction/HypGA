@@ -1,7 +1,7 @@
 #ifndef Device
 #define Device
 
-namespace hyperfiction{
+namespace hypga{
 	void startNewSession( const char *sUID , int iPeriod );
 	void sendView( const char *sPage );
 	void sendEvent( const char *sCat , const char *sAction,const char *sLabel , int iValue );

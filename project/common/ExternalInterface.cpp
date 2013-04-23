@@ -8,7 +8,7 @@
 #include "HypGA.h"
 #include <stdio.h>
 
-using namespace hyperfiction;
+using namespace hypga;
 extern "C"{
 
 	int HypGA_register_prims(){
