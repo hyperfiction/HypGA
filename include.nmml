@@ -11,7 +11,7 @@
 
 	<!-- Android -->
 		<java path="project/android" />
-		<template path="/android-jars" rename="libs" if="android"/>
+		<templatePath name="templates" />
 
 		<echo value='| Add The following permissions to yours AndroidManifest.xml                 |' if="android" />
 		<echo value='| <uses-permission android:name="android.permission.INTERNET" />             |' if="android" />
