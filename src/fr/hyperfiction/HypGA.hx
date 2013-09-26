@@ -95,7 +95,7 @@ class HypGA{
 		#if ios
 		@CPP("HypGA","HypGA_sendEvent")
 		#end
-		static public function trackEvent( sCat : String , sAction : String , sLabel : String , value : Int ) : Void {
+		static public function trackEvent( sCat : String , sAction : String , sLabel : String , value : Int = 1 ) : Void {
 		}
 
 		/**
