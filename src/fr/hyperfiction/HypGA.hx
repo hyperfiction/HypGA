@@ -163,7 +163,7 @@ class HypGA{
 		@JNI
 		#end
 		#if ios
-		@CPP("HypGA","HypGA_setCustom_metric")
+		@CPP("HypGA","HypGA_sendSocial")
 		#end
 		static public function sendSocial( sSocial_network : String , sAction : String , sTarget : String ) : Void {
 		}

@@ -83,7 +83,8 @@ public class HypGA{
 		* @return	void
 		*/
 		static public void trackEvent( String sCat , String sAction , String sLabel , int iVal ){
-			Log.i( TAG, "trackEvent : cat "+sCat+" || action : "+sAction+" || label : "+sLabel+" || iVal : "+iVal );
+			//Log.i( TAG, "trackEvent : cat "+sCat+" || action : "+sAction+" || label : "+sLabel+" || iVal : "+iVal );
+			//Log.i( TAG, "_gaTracker ::: "+_gaTracker);
 			_gaTracker.sendEvent( sCat , sAction , sLabel , (long) iVal );
 		}
 
