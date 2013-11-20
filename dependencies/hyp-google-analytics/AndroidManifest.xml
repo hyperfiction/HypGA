@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="fr.hyperfiction.hypga" >
+
+		<!-- Google Analytics permissions -->
+			<uses-permission android:name="android.permission.INTERNET" />
+			<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+		<!-- Optional : Used for Google Play Store Campaign Measurement-->;
+			<service android:name="com.google.analytics.tracking.android.CampaignTrackingService" />
+			<receiver android:name="com.google.analytics.tracking.android.CampaignTrackingReceiver" android:exported="true" >
+			  <intent-filter>
+			    <action android:name="com.android.vending.INSTALL_REFERRER" />
+			  </intent-filter>
+			</receiver>
+
+</manifest>

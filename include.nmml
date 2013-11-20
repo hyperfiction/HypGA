@@ -1,29 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project>
+<extension>
 
 	<!-- misc -->
-		<classpath name="src" />
+		<classpath name="src"/>
 
-	<!-- Mobile -->
-		<echo value='|----------------------------------------------------------------------------|' if="mobile" />
-		<echo value='|                              /!\ [HypGA] /!\                               |' if="mobile" />
-		<echo value='|----------------------------------------------------------------------------|' if="mobile" />
+	<section unless="display">
 
-	<!-- Android -->
-		<java path="project/android" />
-		<templatePath name="templates" />
+		<!-- Android -->
+			<dependency name="hyp-google-analytics" path="dependencies/hyp-google-analytics" if="android"/>
 
-		<echo value='| Add The following permissions to yours AndroidManifest.xml                 |' if="android" />
-		<echo value='| <uses-permission android:name="android.permission.INTERNET" />             |' if="android" />
-		<echo value='| <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> |' if="android" />
+		<!-- iOS -->
+			<ndll name="HypGA" if="ios"/>
+			<dependency name="CFNetwork.framework" 				if="ios" />
+			<dependency name="CoreData.framework" 				if="ios" />
+			<dependency name="SystemConfiguration.framework" 	if="ios" />
+			<dependency name="sqlite3" 							if="ios"/>
 
-	<!-- iOS -->
-		<ndll name="HypGA" if="ios"/>
-		<echo value="| Don't forget linking the HypGA source folder to your XCode project         |" if="ios" />
-		<template path="/templates/ios/" rename="HypGA/" 	if="ios"/>
-		<dependency name="CFNetwork.framework" 			if="ios" />
-		<dependency name="CoreData.framework" 			if="ios" />
-		<dependency name="SystemConfiguration.framework" 	if="ios" />
-		<dependency name="sqlite3" 					if="ios"/>
-		<echo value="|----------------------------------------------------------------------------|" if="mobile" />
-</project>
+		<!-- HaxeLib -->
+			<haxelib name="inthebox-macros" />
+
+		<!-- HaxeDef -->
+			<haxedef name="HypGA"/>
+
+	</section>
+
+</extension>
