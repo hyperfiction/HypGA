@@ -11,10 +11,13 @@
 
 		<!-- iOS -->
 			<ndll name="HypGA" if="ios"/>
-			<dependency name="CFNetwork.framework" 				if="ios" />
-			<dependency name="CoreData.framework" 				if="ios" />
-			<dependency name="SystemConfiguration.framework" 	if="ios" />
-			<dependency name="sqlite3" 							if="ios"/>
+			<dependency name="CFNetwork.framework" 				                    if="ios" />
+			<dependency name="CoreData.framework" 				                    if="ios" />
+			<dependency name="SystemConfiguration.framework" 	                    if="ios" />
+			<dependency name="sqlite3" 							                    if="ios"/>
+			<dependency name="AdSupport.framework"				                    if="ios"/>
+            <dependency name="project/iPhone/libs/libAdIdAccess.a"	                if="ios"/>
+            <dependency name="project/iPhone/libs/libGoogleAnalyticsServices.a"	    if="ios"/>
 
 		<!-- HaxeLib -->
 			<haxelib name="inthebox-macros" />
