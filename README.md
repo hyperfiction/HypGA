@@ -3,8 +3,10 @@ HypGA
 A Google Analytics native extension for NME
 -----------------------------
 
-This NME native extension allows you to integrate Google Analytics ( v2 Beta 4 ) into your NME application.
-The supported compilation targets are [iOS](https://developers.google.com/analytics/devguides/collection/ios/v2/) & [Android](https://developers.google.com/analytics/devguides/collection/android/v2/)
+This OpenFL native extension allows you to integrate Google Analytics v3  into your OpenFL application.
+The supported compilation targets are 
+* [iOS](https://developers.google.com/analytics/devguides/collection/ios/v3/) 
+* [Android](https://developers.google.com/analytics/devguides/collection/android/v2/)
 
 Installation
 ------------
@@ -22,10 +24,11 @@ Usage
 -----
 Just call the public methods on the HypGA class.
 
-For iOS you need to link the Google Analytics class package to your XCode project.
-Just drag & drop on your project the HypGA folder. ( [your_export_folder]/ios/[ProjectName]/HypGA )
+For iOS, put the following libs (from GA SDK) into projects/iPhone/libs:
+* libAdIdAccess.a
+* libGoogleAnalyticsServices.a
 
-Baisc reference
+Basic reference
 ---------------
 
 First start the session via :
