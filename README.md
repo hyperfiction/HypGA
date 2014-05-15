@@ -3,7 +3,7 @@ HypGA
 A Google Analytics native extension for NME
 -----------------------------
 
-This OpenFL native extension allows you to integrate Google Analytics v3  into your OpenFL application.
+This OpenFL native extension allows you to integrate Google Analytics into your OpenFL application.
 The supported compilation targets are 
 * [iOS](https://developers.google.com/analytics/devguides/collection/ios/v3/) 
 * [Android](https://developers.google.com/analytics/devguides/collection/android/v2/)
@@ -24,7 +24,7 @@ Usage
 -----
 Just call the public methods on the HypGA class.
 
-For iOS, put the following libs (from GA SDK) into projects/iPhone/libs:
+For iOS, put the following libs (from GA v3 SDK) into projects/iPhone/libs:
 * libAdIdAccess.a
 * libGoogleAnalyticsServices.a
 
