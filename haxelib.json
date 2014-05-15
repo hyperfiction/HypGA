@@ -1,0 +1,13 @@
+{
+  "name": "HypGA",
+  "url": "https://github.com/hyperfiction/HypGA",
+  "license": "MIT",
+  "tags": [],
+  "description": "Google Analytics native extension for OpenFL",
+  "version": "1.0.0",
+  "releasenote": "",
+  "contributors": ["shoebox", "joshua_jandyco"],
+  "dependencies": {
+        "inthebox-macros":""
+  }
+}
