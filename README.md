@@ -25,17 +25,21 @@ Just call the public methods on the HypGA class.
 For iOS you need to link the Google Analytics class package to your XCode project.
 Just drag & drop on your project the HypGA folder. ( [your_export_folder]/ios/[ProjectName]/HypGA )
 
-Baisc reference
+Basic reference
 ---------------
 
 First start the session via :
-<pre><code>HypGA.startSession( "YOUR-UA-CODE" );<code></pre>
-
+```
+HypGA.startSession( "YOUR-UA-CODE" );
+```
 Tracking a page view :
-<pre><code>HypGA.trackPageView( "your-page-code");<code></pre>
-
+```
+HypGA.trackPageView( "your-page-code");
+```
 Tracking an event :
-<pre><code>HypGA.trackEvent( "event-cat" , "event-action","event-label",1);<code></pre>
+```
+HypGA.trackEvent( "event-cat" , "event-action","event-label",1);
+```
 
 For more advance methods just take a look a the HypGA class.
 All the Google Analytics V2 methods are supported( timing, metric , social , dimension... )
@@ -44,8 +48,8 @@ Made at Hyperfiction
 --------------------
 [hyperfiction.fr](http://hyperfiction.fr)
 
-Developed by : 
-Johann Martinache 
+Developed by :
+Johann Martinache
 [@shoe_box](https://twitter.com/shoe_box)
 
 License
